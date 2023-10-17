@@ -53,3 +53,36 @@ body {
   color: #191c32;
   transition: ease-in 0.3s;
 }
+.main {
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+}
+h1{
+  font-size: 3em;
+  
+}
+span {
+  color:aqua
+}
+.download-cv {
+  padding: 10px 20px;
+  background-color: aqua;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 1px 3px 11px -5px rgba(0, 238, 251, 0.885);
+}
+.download-cv:hover{
+  background-color: #fff;
+  box-shadow: none;
+}
+.main img{
+  width: 600px;
+  /*border: 7px solid aqua;*/
+  height: 600px;
+}
