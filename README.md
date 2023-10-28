@@ -1,47 +1,39 @@
 # PortfolioTP
+This repository contains the source code of our Web Portfolio, which is used to showcase and highlight our work and skills in web development and design. Here, you will find information on how to set up and run the project locally, as well as a brief description of the project's structure.
 
-Este repositorio contiene el código fuente de nuestro Portfolio Web, que se utiliza para mostrar y destacar nuestro trabajo y habilidades en el desarrollo web y diseño. Aquí encontrarás información sobre cómo configurar y ejecutar el proyecto localmente, así como una breve descripción de la estructura del proyecto. <br>
+<h3>Description</h3>
+Our Web Portfolio is a tool for effectively and attractively displaying the projects we have worked on and the skills we have acquired in web development and design. We use modern technologies to create an interactive and pleasant experience for visitors.
 
-<h3>Descripción</h3>
+<h3>Contents</h3>
+The repository includes:
 
-Nuestro Portfolio Web es una herramienta para mostrar de manera efectiva y atractiva los proyectos en los que hemos trabajado y las habilidades que hemos adquirido en el desarrollo web y diseño. Utilizamos tecnologías modernas para crear una experiencia interactiva y agradable para los visitantes. <br>
+<b>Source Code:</b> The "src" folder contains all the files and directories related to the source code of the website.
 
-<h3>Contenido</h3>
+<h3>Requirements</h3>
+To run this project locally, you will need:
 
-El repositorio contiene:
+<b>Web Browser:</b> We recommend using Google Chrome, Mozilla Firefox, or any other modern web browser.
 
-<b>Código fuente:</b> La carpeta "src" contiene todos los archivos y directorios relacionados con el código fuente del sitio web.<br>
+<h3>Setup</h3>
+Follow these steps to set up and run the project in your local environment:
 
-<h3>Requisitos</h3>
-
-Para ejecutar este proyecto localmente, necesitarás:
-
-<b>Navegador web:</b> Recomendamos el uso de Google Chrome, Mozilla Firefox o cualquier otro navegador moderno.<br>
-
-<h3>Configuración</h3>
-
-Siga estos pasos para configurar y ejecutar el proyecto en su entorno local:
 <hr>
-<b>Clonar el repositorio: Utilice Git para clonar este repositorio en su máquina local: </b>
-
+<b>Clone the repository: Use Git to clone this repository to your local machine:</b>
 Copy code
-git clone https://github.com/tu-usuario/CodeMasters.git 
-<hr>
-<b>Navegar al directorio del proyecto:</b>
+git clone https://github.com/your-username/CodeMasters.git
 
+<hr>
+<b>Navigate to the project directory:</b>
 Copy code
 cd portfolio-web <br>
-<hr>
-<b>Abrir el archivo HTML: Abra el archivo "index.html" en su navegador web:</b>
 
+<hr>
+<b>Open the HTML file: Open the "index.html" file in your web browser:</b>
 Copy code
 /src/index.html
 
+<h3>Usage</h3>
+Browse through the different sections of our Web Portfolio to learn more about our work and skills. Feel free to get in touch with us if you have any questions or are interested in collaborating on future projects.
 
-<h3>Uso</h3>
-
-Navegue por las diferentes secciones de nuestro Portfolio Web para conocer más sobre nuestro trabajo y nuestras habilidades. Siéntase libre de ponerse en contacto con nosotros si tiene alguna pregunta o está interesado en colaborar en proyectos futuros.<br>
-
-<h3>Contribución</h3>
-
-No estamos aceptando contribuciones externas en este repositorio en este momento, ya que se trata de un portfolio personal. Sin embargo, ¡estamos abiertos a comentarios y sugerencias!
+<h3>Contribution</h3>
+We are not accepting external contributions to this repository at the moment, as it is a personal portfolio. However, we are open to feedback and suggestions!
