@@ -102,9 +102,9 @@ h1 {
 }
 
 .main img {
-  width: 600px;
-  height: 500px;
-  min-height: 300px;
+  width: 75vh;
+  height: 75vh;
+  min-height: 20vh;
 }
 
 .about {
