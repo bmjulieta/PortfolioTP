@@ -639,7 +639,7 @@ skills{
     height: 50px;
     color: #4A16EE;
     position: relative;
-    object-position: center;
+    object-position: right;
     transform: translateX(-50%);
     top: -25px;
     border-radius: 50%;
