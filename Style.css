@@ -67,7 +67,7 @@ body {
 .main {
   margin: 0 auto;
   width: 80vw;
-  height: 80vh;
+  height: 70vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -104,7 +104,7 @@ h1 {
 .main img {
   width: 75vh;
   height: 75vh;
-  min-height: 20vh;
+  min-height: 35vh;
 }
 
 .about {
@@ -595,6 +595,7 @@ skills{
   .about {
     display: flex;
     flex-direction: column-reverse;
+    justify-content: center;
   }
 
   .main img {
