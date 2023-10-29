@@ -408,6 +408,13 @@ skills{
   max-width: 1100px;
   margin: auto;
 }
+.project_a{
+  text-decoration: none;
+}
+.project_a:visited {
+  color: #fff;
+}
+
 .portfolio h2{
   font-size: 2em;
   font-family: 'Montserrat';
