@@ -252,6 +252,13 @@ skills{
   color: #fff;
   padding: 50px 20px;
 }
+@media screen and (max-width: 800px) {
+  .skills {
+    background-color: #876DF5;
+    color: #fff;
+    padding: 20px 10px; 
+    text-align: center; 
+  }
 .skills .contenido-seccion{
   max-width: 1100px;
   margin: auto;
