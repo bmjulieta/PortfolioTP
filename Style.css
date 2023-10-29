@@ -599,7 +599,7 @@ skills{
   }
 
   .main img {
-    width: min(80%, 35vh);
+    width: min(90%, 35vh);
     height: auto;
   }
 
