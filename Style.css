@@ -475,6 +475,7 @@ skills{
   width: 750px;
   height: 700px;
   bottom: 0px;
+  
 }
 
 .form-group {
@@ -636,14 +637,20 @@ skills{
 
   }
   footer .arriba{
-    display: block;
-    width: 50px;
-    height: 50px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 5em;
+    height: 5em;
     color: #4A16EE;
 
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
+}
+.arriba_container {
+  align-items: center;
+  justify-content: center;
 }
 
 }
