@@ -346,6 +346,67 @@
       });
   });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const menuLinks = document.querySelectorAll('.menu a');
+
+    // Agregar un controlador de eventos a cada enlace del menú
+    menuLinks.forEach(function(link) {
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        // Obtener el destino de la sección a través del atributo href
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        // Calcular la posición de la sección de destino
+        const offsetTop = targetSection.offsetTop;
+
+        // Bloquear el scroll solo para la sección "About Me"
+        if (targetId === 'seccion1') {
+          document.body.style.overflow = 'hidden';
+
+          // Desbloquear el scroll después de un tiempo (por ejemplo, 1 segundo)
+          setTimeout(function() {
+            document.body.style.overflow = 'auto';
+          }, 10000);
+        }
+
+        // Desplazar suavemente a la posición de la sección de destino
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth'
+        });
+      });
+    });
+  });
+  // Añadimos clase sticky
+document.addEventListener("DOMContentLoaded", function() {
+  const menu = document.querySelector('.navbar');
+  const main = document.querySelector('.main');
+
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > menu.offsetHeight + 150) {
+      menu.classList.add('sticky');
+      main.style.marginTop = menu.offsetHeight + 'px';
+    } else {
+      menu.classList.remove('sticky');
+      main.style.marginTop = '0';
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleMenuButton = document.getElementById("toggleMenu");
+  const menu = document.getElementById("menu");
+
+  toggleMenuButton.addEventListener("click", function () {
+    menu.classList.toggle("show-menu");
+  });
+});
+
+</script>
+
 
   
 </body>

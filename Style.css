@@ -17,6 +17,27 @@ body {
   color: #fff;
 }
 
+/* Añade estilos para la clase sticky */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #876DF5;
+}
+
+
+/* Añade estilos al contenido principal para ajustar el espacio superior */
+.sticky + .main {
+  margin-top: 70px; /* Ajusta según el alto de tu barra de navegación */
+}
+
+
+/* Cambia el fondo del menú cuando es sticky */
+.sticky .menu {
+  background-color:#876DF5;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
