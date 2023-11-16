@@ -17,6 +17,11 @@ body {
   color: #fff;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
 /* Añade estilos para la clase sticky */
 .sticky {
   position: fixed;
@@ -26,22 +31,14 @@ body {
   background-color: #876DF5;
 }
 
-
 /* Añade estilos al contenido principal para ajustar el espacio superior */
 .sticky + .main {
   margin-top: 70px; /* Ajusta según el alto de tu barra de navegación */
 }
 
-
 /* Cambia el fondo del menú cuando es sticky */
 .sticky .menu {
-  background-color:#876DF5;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 2em;
+  background-color: #876DF5;
 }
 
 .brand {
@@ -143,6 +140,7 @@ h1 {
 .about-info {
   grid-column: 5/10;
   padding: 3em;
+  overflow: hidden;
 }
 
 .about-info h2 {
@@ -680,5 +678,10 @@ skills{
   align-items: center;
   justify-content: center;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
+
 
 }

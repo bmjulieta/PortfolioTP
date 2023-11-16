@@ -24,10 +24,15 @@
           <li><a href="#seccion4">Contact</a></li>
         </ul>
         <div class="toggle-menu">
+       
+        </div>
+        <div class="toggle-menu" id="toggleMenu">
           <i class="fas fa-bars" id="toggle_open"></i>
           <i class="fas fa-close" id="toggle_close"></i>
         </div>
+        
       </nav>
+      
     </header>
     <main class="main">
        <!-- SECCIÓN INICIO -->
@@ -47,7 +52,7 @@
   <!-- SECCIÓN ABOUT -->
   <div class="about" id="seccion1">
     <img src="Img/im2.jpg" alt="Jane Smith imagen">
-    <div class="about-info">
+    <div class="about-info block-scroll">
       <section>
       <h2>About me</h2>
       <div class="divider"></div>
@@ -57,7 +62,11 @@
       <span class="overlay"></span>
       </section>
     </div>
+    <a href="#" class="btn-flotante">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
   </div>
+
   <!-- SECCIÓN PORTFOLIO -->
   <section id="portfolio" class="portfolio">
     <div class="contenido-seccion">
@@ -249,9 +258,9 @@
   </div>
   <footer class="footer"> 
     <div class="arriba_container">
-    <a href="#" class="arriba" id="scrollToTop">
-      <i class="fa-solid fa-angles-up"></i>
-    </a>
+      <a href="#" class="arriba" id="scrollToTop">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
     </div>
     <div class="footer-content">
       <h2>Jane Smith</h2>
@@ -406,8 +415,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 </script>
-
-
   
 </body>
 </html>
+
