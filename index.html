@@ -62,7 +62,9 @@
       <span class="overlay"></span>
       </section>
     </div>
-   
+    <a href="#" class="btn-flotante">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
   </div>
 
   <!-- SECCIÓN PORTFOLIO -->
@@ -293,6 +295,12 @@
           'Accept': 'application/json'
         }
       });
+      if (name.trim()===""||
+      email.trim()===""||
+      consulta.trim()===""){
+        alert("Please, complete the requerid fiels.");
+        event.preventDefault();// detiene el envio del formulario si faltan campos obligatorios.
+      }
       if (response.ok) {
         this.reset();
         alert('Thank you for contacting me, I will get in touch with you soon');
