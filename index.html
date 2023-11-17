@@ -247,9 +247,9 @@
         <form id="form" class="form" action="https://formspree.io/f/mbjvwwqo" method="POST">
           <h4>Send me a message...</h4>
           <div class="form-group">
-            <input type="text" placeholder="Name" class="input">
-            <input type="email" placeholder="Email" class="input">
-            <textarea name="message" placeholder="Place your message here..."></textarea>
+            <input type="text" placeholder="Name" class="input" id="name">
+            <input type="email" placeholder="Email" class="input" id="email">
+            <textarea name="message" placeholder="Place your message here..." id="contact"></textarea>
             <button type="submit" class="btn-submit">Send message</button>
           </div>
         </form>
@@ -287,6 +287,19 @@
   
     async function handleSubmit(event) {
       event.preventDefault();
+  
+      // Obtén los valores de los campos del formulario
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const consult = document.getElementById('contact').value;
+  
+      // Verifica si los campos están vacíos
+      if (!name || !email || !consult) {
+        alert("Please, complete the required fields.");
+        return;
+      }
+  
+      // Continúa con el envío del formulario
       const form = new FormData(this);
       const response = await fetch(this.action, {
         method: this.method,
@@ -295,18 +308,14 @@
           'Accept': 'application/json'
         }
       });
-      if (name.trim()===""||
-      email.trim()===""||
-      consulta.trim()===""){
-        alert("Please, complete the requerid fiels.");
-        event.preventDefault();// detiene el envio del formulario si faltan campos obligatorios.
-      }
+  
       if (response.ok) {
         this.reset();
-        alert('Thank you for contacting me, I will get in touch with you soon');
+        alert('Thank you for contacting me, I will get in touch with you soon');
       }
     }
   </script>
+  
   <script>
     document.addEventListener("DOMContentLoaded", function() {
         // Obtén el botón y las secciones
